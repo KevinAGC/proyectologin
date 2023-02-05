@@ -1,11 +1,58 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
+    <style>
+      
+      form{
+        margin: auto;
+        width: 50%;
+        background-color: black;
+        padding: 10px;
+      }
+      div {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      label {
+        display: inline-block;
+        width: 25%;
+        text-align: left; 
+        color: white;
+      }
+
+      .button{
+        text-align: center;
+        width: 100%;
+      }
+       hr{
+        height: 10px;
+        width: 100%;
+        background-color: white;
+       }
+      input{
+        width: 70%;
+      }
+
+    </style>
     <title>Pr&aacute;ctica de Login con Git</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
+    <form action="/form/submit" method="post">
+      <label><b>Iniciar sesión</b></label>
+      <hr class="my-4">
 
-		<!-- CONTENIDO DEL LOGIN -->
-
-  </body>
+      <div>
+        <label>Usuario:*</label>
+        <input type="text" />
+      </div>
+      <div >
+        <label>Contraseña:*</label>
+        <input type="text" />
+      </div>
+      <div class="button">
+      <button type="button" class="btn btn-primary btn-sm btn-block">Ingresar</button>
+    </div>
+    </form>
+  </body></html>
 </html>
